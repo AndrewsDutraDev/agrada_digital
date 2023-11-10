@@ -1,0 +1,78 @@
+@mixin media($point) {
+  @if $point =="sm" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point =="md" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $point =="lg" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $point =="xs" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $point =="xxs" {
+    @media (max-width: 425px) {
+      @content;
+    }
+  }
+}
+
+%container {
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 2000px;
+}
+
+%container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+%skeleton {
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    animation: shimmer 2s infinite;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg,
+        rgba($white, 0) 0,
+        rgba($white, 0.2) 30%,
+        rgba($white, 0.5) 40%,
+        rgba($white, 0));
+  }
+}

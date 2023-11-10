@@ -1,0 +1,32 @@
+header {
+  .topbar{
+    letter-spacing: 4.8px;
+    color: #FFFFFF;
+    background-color: $black;
+    text-align: center;
+    padding: 7px 15px;
+  }
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    // .search{
+    //   input{
+    //     background-color: #EDEDED;
+    //     border-radius: 5px;
+    //     padding: 14px;
+    //     letter-spacing: 0px;
+    //     color: $gray;
+    //   }
+    //   button{
+    //     background-color: $green;
+    //     color: $black;
+    //     border: 1px solid $green;
+    //     transition: .3s;
+    //     &:hover{
+    //       background-color: $black;
+    //       color: $green;
+    //     }
+    //   }
+    // }
+  }
+}
