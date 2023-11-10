@@ -448,12 +448,7 @@ section.section {
   padding-bottom: 46%;
 }
 .lazyload-container.horizontal-thin {
-  padding-bottom: 45%;
-}
-@media (min-width: 768px) {
-  .lazyload-container.horizontal-thin {
-    padding-bottom: 18%;
-  }
+  padding-bottom: 26%;
 }
 .lazyload-container.vertical {
   padding-bottom: 146%;
@@ -491,7 +486,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
-  padding-right: 30px;
+  padding-bottom: 30px;
+  position: sticky;
+  top: 0;
 }
 @media (min-width: 992px) {
   header nav .logo {
@@ -625,6 +622,7 @@ header nav .actions #closeMenu svg {
     width: 100%;
     transform: translateX(100%);
     transition: 0.3s;
+    z-index: 9999;
   }
   header nav .actions.active {
     transform: translateX(0);

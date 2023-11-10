@@ -12,7 +12,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    padding-right: 30px;
+    padding-bottom: 30px;
+    position: sticky;
+    top: 0;
     .logo{
       @include media('md'){
         width: 25%;
@@ -133,6 +135,7 @@ header {
         width: 100%;
         transform: translateX(100%);
         transition: .3s;
+        z-index: 9999;
         &.active{
           transform: translateX(0);  
         }
