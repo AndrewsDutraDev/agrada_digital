@@ -1,4 +1,6 @@
 
+import Header from './components/header.js';
 import Home  from  './components/home.js';
     
-Home.init();
+Header.init();
+// Home.init();
