@@ -1,0 +1,16 @@
+.banner-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+  > div {
+    width: calc(50% - 5px);
+		.aspect-ratio{
+			padding-bottom: 41.94%;
+		}
+    @include media("xs") {
+      width: 100%;
+    }
+  }
+}

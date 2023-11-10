@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: $font-family !important;
-
+  background-color: #F1F1F1;
   main {
     min-height: 70vh;
   }
@@ -79,7 +79,7 @@ section.section {
 }
 /* Lazy Load */
 
-.lazyload-container {
+.aspect-ratio {
   position: relative;
   overflow: hidden;
 

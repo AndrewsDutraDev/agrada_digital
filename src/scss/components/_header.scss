@@ -1,5 +1,6 @@
 header {
   .topbar{
+    font-size: 12px;
     letter-spacing: 4.8px;
     color: #FFFFFF;
     background-color: $black;
@@ -15,6 +16,7 @@ header {
     padding-bottom: 30px;
     position: sticky;
     top: 0;
+    z-index: 9999;
     .logo{
       @include media('md'){
         width: 25%;
@@ -49,6 +51,7 @@ header {
           color: $gray;
           width: 75%;
           height: 45px;
+          border: 0;
           @include media('xs'){
             width: 60%;
           }
@@ -57,7 +60,6 @@ header {
           height: 45px;
           background-color: $green;
           color: $black;
-          border: 1px solid $green;
           transition: .3s;
           width: 20%;
           padding: 12px 5px;
