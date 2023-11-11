@@ -1,6 +1,6 @@
 const slider = {
-  setCarouselProducts: function(carouselId){
-    $(carouselId).slick({
+  setCarouselProducts: function(carouselClass){
+    $(carouselClass).slick({
       infinite: false,
       adaptiveHeight: true,
       slidesToShow: 4,

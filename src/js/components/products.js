@@ -8,7 +8,7 @@ const Products = {
 		console.log('products', products)
 		return products;
 	},
-	htmlProductBlock: function(product, carouselId){
+	htmlProductBlock: function(product){
 		let price = new Intl.NumberFormat('pt-BR').format(product.price)
 		var productBlockHtml = `
 			<div class="product-block">
@@ -31,19 +31,28 @@ const Products = {
 		return productBlockHtml;
 		// document.getElementById(carouselId).insertAdjacentHTML("beforeend", productBlockHtml);
 	},
-	appendProducts: function(carouselId){
-		let id = `#${carouselId}`
-		slider.setCarouselProducts(id)
+	appendProducts: function(carouselClass){
+		let className = `.${carouselClass}`
+		let element = $(className)
+		let secondElement = element[1]
+		slider.setCarouselProducts(className)
 		this.getAllProducts().then(products => {
 			products.map(function(product){
-				let htmlProduct = Products.htmlProductBlock(product, carouselId)
-				$(id).slick('slickAdd', htmlProduct);
+				let htmlProduct = Products.htmlProductBlock(product)
+				element.first().slick('slickAdd', htmlProduct);
+				element.slick('slickAdd', htmlProduct);
 			});
 		});
 	},
+	cloneProductSection: function(){
+		let products = document.querySelector('.products');
+		let clonedProducts = products.cloneNode(true);
+		let sectionClonedProducts = document.querySelector('.cloned-products')
+		sectionClonedProducts.appendChild(clonedProducts);
+	},
 	init: function(){
-		console.log('init')
-		this.appendProducts('carousel-1');
+		this.cloneProductSection()
+		this.appendProducts('slider');
 	}
 };
 
