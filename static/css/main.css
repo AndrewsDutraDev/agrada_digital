@@ -332,7 +332,7 @@ template {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  max-width: 2000px;
+  max-width: 1400px;
 }
 
 .skeleton {
@@ -488,15 +488,18 @@ header .topbar {
   padding: 7px 15px;
 }
 header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   position: sticky;
   top: 0;
   z-index: 9999;
+  background-color: #fff;
+}
+header nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 992px) {
   header nav .logo {
@@ -675,11 +678,60 @@ footer .payment {
   font-size: 15px;
   font-weight: 700;
   color: #34CB2E;
+}
+footer .payment .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 15px;
+}
+
+.product-block {
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+}
+.product-block > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.product-block figure {
+  margin: 25px;
+}
+.product-block figure img {
+  object-fit: contain;
+}
+.product-block .name {
+  font-weight: 500;
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.product-block del, .product-block .installments {
+  font-size: 12px;
+  color: #909090;
+}
+.product-block ins {
+  font-size: 20px;
+  color: #34CB2E;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.product-block button {
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #34CB2E;
+  padding: 13px 60px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: 0.2s;
+}
+.product-block button:hover {
+  background-color: #000000;
+  color: #34CB2E;
 }
 
 .banner-grid {
@@ -699,4 +751,65 @@ footer .payment {
   .banner-grid > div {
     width: 100%;
   }
+}
+
+.products-title {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .products-title {
+    margin-top: 40px;
+  }
+}
+.products .slider {
+  position: relative;
+}
+.products .slider .slick-prev {
+  left: -25px;
+}
+@media (max-width: 767px) {
+  .products .slider .slick-prev {
+    left: -5px;
+  }
+}
+.products .slider .slick-prev:after {
+  content: url("../../../static/img/prev-icon.svg");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+.products .slider .slick-next {
+  right: -25px;
+}
+@media (max-width: 767px) {
+  .products .slider .slick-next {
+    right: -5px;
+  }
+}
+.products .slider .slick-next:after {
+  content: url("../../../static/img/next-icon.svg");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+.products .slider .slick-next, .products .slider .slick-prev {
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  z-index: 9999;
+  border-radius: 5px;
+  padding: 5px 9px;
+}
+.products .slider .slick-list {
+  margin: 0 -10px;
+}
+.products .slider .slick-slide > div {
+  padding: 0 10px 25px;
 }

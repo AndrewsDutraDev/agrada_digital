@@ -22,8 +22,10 @@
       href="./static/css/main.css"
       inline
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <title>Agrada Digital</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -32,80 +34,83 @@
         <div class="topbar">
           ESTE É UM TESTE DE DESENVOLVEDOR FRONT-END
         </div>
-        <nav class="container">
-          <div class="logo">
-            <img src="./static/img/logos-agrada.png" alt="Logo Agrada Digital">
-          </div>
-          <div class="menu-mobile">
-            <button type="button" id="toggleMenu">
-              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-          <div class="actions">
-            <button type="button" id="closeMenu">
-              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Menu / Close_MD">
-                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-              </svg>
-            </button>
-            <div class="search">
-              <input type="text" placeholder="O que você procura?">
-              <button type="submit">Buscar</button>
+        <nav class="">
+          <div class="container">
+            <div class="logo">
+              <img src="./static/img/logos-agrada.png" alt="Logo Agrada Digital">
             </div>
-            <div class="shortcuts">
-              <div class="shortcuts-item">
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                    <g id="ÍCONE_LOGIN" data-name="ÍCONE LOGIN" transform="translate(-1215.51 -30.999)">
-                      <path id="ÍCONE_LOGIN-2" data-name="ÍCONE LOGIN" d="M38.239,17.32a5.421,5.421,0,0,1-5.489-5.347,5.5,5.5,0,0,1,11,0A5.43,5.43,0,0,1,38.239,17.32Zm.014-8.792a3.442,3.442,0,1,0,3.541,3.446,3.494,3.494,0,0,0-3.541-3.446Z" transform="translate(1187.418 24.359)" fill="#34cb2e"/>
-                      <path id="ÍCONE_LOGIN-3" data-name="ÍCONE LOGIN" d="M35.519,58.065l-18.036-.03a.962.962,0,0,1-.973-.951,9.86,9.86,0,0,1,10.015-9.7,9.86,9.86,0,0,1,9.985,9.73.934.934,0,0,1-.29.677.991.991,0,0,1-.7.273ZM18.512,56.142l15.978.024a8.081,8.081,0,0,0-15.981-.024Z" transform="translate(1199 -4.066)" fill="#34cb2e"/>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <a href="#" target="_blank">
-                    Faça login
-                  </a>
-                </div>
+            <div class="menu-mobile">
+              <button type="button" id="toggleMenu">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="actions">
+              <button type="button" id="closeMenu">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Menu / Close_MD">
+                  <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
+              </button>
+              <div class="search">
+                <input type="text" placeholder="O que você procura?">
+                <button type="submit">Buscar</button>
               </div>
-
-              <div class="shortcuts-item">
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23">
-                    <g id="ÍCONE_ATENDIMENTO" data-name="ÍCONE ATENDIMENTO" transform="translate(-1345.013 -26.001)">
-                      <path id="ÍCONE_ATENDIMENTO-2" data-name="ÍCONE ATENDIMENTO" d="M27.5,19.879a4.494,4.494,0,0,0-3.789-4.437v-.63a8.645,8.645,0,0,0-17.289,0v.6A4.509,4.509,0,0,0,7.026,24.4H8.184a1.677,1.677,0,0,0,1.684-1.68V17.07a1.7,1.7,0,0,0-1.5-1.68v-.578a6.684,6.684,0,0,1,13.368,0v.551a1.666,1.666,0,0,0-1.632,1.68v5.645a1.676,1.676,0,0,0,1.105,1.575,4.975,4.975,0,0,1-3.921,2.416,1.075,1.075,0,0,0-1.053-.84H13.868a1.083,1.083,0,0,0-1.079,1.076v1.208A1.083,1.083,0,0,0,13.868,29.2h2.368a1.05,1.05,0,0,0,1.053-.893,6.608,6.608,0,0,0,5.684-3.938A4.515,4.515,0,0,0,27.5,19.879ZM7.921,22.426H7.026a2.547,2.547,0,1,1,0-5.094h.895Zm15.053,0h-.895V17.332h.895a2.547,2.547,0,1,1,0,5.094Z" transform="translate(1342.513 19.801)" fill="#34cb2e"/>
-                    </g>
-                  </svg>                  
+              <div class="shortcuts">
+                <div class="shortcuts-item">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                      <g id="ÍCONE_LOGIN" data-name="ÍCONE LOGIN" transform="translate(-1215.51 -30.999)">
+                        <path id="ÍCONE_LOGIN-2" data-name="ÍCONE LOGIN" d="M38.239,17.32a5.421,5.421,0,0,1-5.489-5.347,5.5,5.5,0,0,1,11,0A5.43,5.43,0,0,1,38.239,17.32Zm.014-8.792a3.442,3.442,0,1,0,3.541,3.446,3.494,3.494,0,0,0-3.541-3.446Z" transform="translate(1187.418 24.359)" fill="#34cb2e"/>
+                        <path id="ÍCONE_LOGIN-3" data-name="ÍCONE LOGIN" d="M35.519,58.065l-18.036-.03a.962.962,0,0,1-.973-.951,9.86,9.86,0,0,1,10.015-9.7,9.86,9.86,0,0,1,9.985,9.73.934.934,0,0,1-.29.677.991.991,0,0,1-.7.273ZM18.512,56.142l15.978.024a8.081,8.081,0,0,0-15.981-.024Z" transform="translate(1199 -4.066)" fill="#34cb2e"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="#" target="_blank">
+                      Faça login
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank">
-                    Atendimento
-                  </a>
+  
+                <div class="shortcuts-item">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23">
+                      <g id="ÍCONE_ATENDIMENTO" data-name="ÍCONE ATENDIMENTO" transform="translate(-1345.013 -26.001)">
+                        <path id="ÍCONE_ATENDIMENTO-2" data-name="ÍCONE ATENDIMENTO" d="M27.5,19.879a4.494,4.494,0,0,0-3.789-4.437v-.63a8.645,8.645,0,0,0-17.289,0v.6A4.509,4.509,0,0,0,7.026,24.4H8.184a1.677,1.677,0,0,0,1.684-1.68V17.07a1.7,1.7,0,0,0-1.5-1.68v-.578a6.684,6.684,0,0,1,13.368,0v.551a1.666,1.666,0,0,0-1.632,1.68v5.645a1.676,1.676,0,0,0,1.105,1.575,4.975,4.975,0,0,1-3.921,2.416,1.075,1.075,0,0,0-1.053-.84H13.868a1.083,1.083,0,0,0-1.079,1.076v1.208A1.083,1.083,0,0,0,13.868,29.2h2.368a1.05,1.05,0,0,0,1.053-.893,6.608,6.608,0,0,0,5.684-3.938A4.515,4.515,0,0,0,27.5,19.879ZM7.921,22.426H7.026a2.547,2.547,0,1,1,0-5.094h.895Zm15.053,0h-.895V17.332h.895a2.547,2.547,0,1,1,0,5.094Z" transform="translate(1342.513 19.801)" fill="#34cb2e"/>
+                      </g>
+                    </svg>                  
+                  </div>
+                  <div>
+                    <a href="#" target="_blank">
+                      Atendimento
+                    </a>
+                  </div>
                 </div>
-              </div>
-
-              <div class="shortcuts-item">
-                <div>
-                  <span class="cart-count">3</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24.51" height="23.25" viewBox="0 0 24.51 23.25">
-                    <g id="ÍCONE_CARRINHO" data-name="ÍCONE CARRINHO" transform="translate(-1495.75 -26.749)">
-                      <path id="ÍCONE_CARRINHO-2" data-name="ÍCONE CARRINHO" d="M69.1,73.9a2.541,2.541,0,1,0,2.5,2.541A2.534,2.534,0,0,0,69.1,73.9Zm0,3.542a1,1,0,1,1,.986-1A1.014,1.014,0,0,1,69.1,77.442Z" transform="translate(1445.891 -28.982)" fill="#34cb2e"/>
-                      <path id="ÍCONE_CARRINHO-3" data-name="ÍCONE CARRINHO" d="M34.7,73.9a2.541,2.541,0,1,0,2.5,2.541A2.534,2.534,0,0,0,34.7,73.9Zm0,3.542a1,1,0,1,1,.986-1A1.014,1.014,0,0,1,34.7,77.442Z" transform="translate(1471.441 -28.982)" fill="#34cb2e"/>
-                      <path id="ÍCONE_CARRINHO-4" data-name="ÍCONE CARRINHO" d="M25.974,9.931A2.435,2.435,0,0,0,24.079,9H8.691l-.48-1.863A2.427,2.427,0,0,0,5.861,5.3H3.283a.78.78,0,1,0,0,1.561H5.861a.834.834,0,0,1,.809.629L9.752,19.722A2.427,2.427,0,0,0,12.1,21.56H22.184a2.406,2.406,0,0,0,2.35-1.837l1.9-7.752A2.3,2.3,0,0,0,25.974,9.931Zm-1.087,1.686-1.9,7.752a.834.834,0,0,1-.809.629H12.1a.834.834,0,0,1-.809-.629l-2.2-8.784H24.079a.839.839,0,0,1,.657.327A.787.787,0,0,1,24.887,11.618Z" transform="translate(1493.5 21.699)" fill="#34cb2e" stroke="#34cb2e" stroke-width="0.5"/>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <button type="button">
-                    Carrinho
-                  </button>
+  
+                <div class="shortcuts-item">
+                  <div>
+                    <span class="cart-count">3</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24.51" height="23.25" viewBox="0 0 24.51 23.25">
+                      <g id="ÍCONE_CARRINHO" data-name="ÍCONE CARRINHO" transform="translate(-1495.75 -26.749)">
+                        <path id="ÍCONE_CARRINHO-2" data-name="ÍCONE CARRINHO" d="M69.1,73.9a2.541,2.541,0,1,0,2.5,2.541A2.534,2.534,0,0,0,69.1,73.9Zm0,3.542a1,1,0,1,1,.986-1A1.014,1.014,0,0,1,69.1,77.442Z" transform="translate(1445.891 -28.982)" fill="#34cb2e"/>
+                        <path id="ÍCONE_CARRINHO-3" data-name="ÍCONE CARRINHO" d="M34.7,73.9a2.541,2.541,0,1,0,2.5,2.541A2.534,2.534,0,0,0,34.7,73.9Zm0,3.542a1,1,0,1,1,.986-1A1.014,1.014,0,0,1,34.7,77.442Z" transform="translate(1471.441 -28.982)" fill="#34cb2e"/>
+                        <path id="ÍCONE_CARRINHO-4" data-name="ÍCONE CARRINHO" d="M25.974,9.931A2.435,2.435,0,0,0,24.079,9H8.691l-.48-1.863A2.427,2.427,0,0,0,5.861,5.3H3.283a.78.78,0,1,0,0,1.561H5.861a.834.834,0,0,1,.809.629L9.752,19.722A2.427,2.427,0,0,0,12.1,21.56H22.184a2.406,2.406,0,0,0,2.35-1.837l1.9-7.752A2.3,2.3,0,0,0,25.974,9.931Zm-1.087,1.686-1.9,7.752a.834.834,0,0,1-.809.629H12.1a.834.834,0,0,1-.809-.629l-2.2-8.784H24.079a.839.839,0,0,1,.657.327A.787.787,0,0,1,24.887,11.618Z" transform="translate(1493.5 21.699)" fill="#34cb2e" stroke="#34cb2e" stroke-width="0.5"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div>
+                    <button type="button">
+                      Carrinho
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </nav>
       </header>
       <main>
@@ -117,7 +122,13 @@
           </div>
         </section>
         <section>
-          produtos
+          <div class="products container">
+            <h1 class="products-title">
+              Vitrine de produtos da Agrada Digital
+            </h1>
+            <div class="slider" id="carousel-1"></div>
+          </div>
+          
         </section>
         <section>
           <div class="container banner-grid">
@@ -145,17 +156,19 @@
             </div>
           </div>
         </div>
-        <div class="payment container">
-          <div class="payment-title">
-            Pagamento
-          </div>
-          <div class="payment-flags">
-            <img src="./static/img/icones.png" alt="Formas de pagamento">
+        <div class="payment">
+          <div class="container">
+            <div class="payment-title">
+              Pagamento
+            </div>
+            <div class="payment-flags">
+              <img src="./static/img/icones.png" alt="Formas de pagamento">
+            </div>
           </div>
         </div>
       </footer>
     </div>
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="./src/js/main.js" type="module"></script>
   </body>
 </html>

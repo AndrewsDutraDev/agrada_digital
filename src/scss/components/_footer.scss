@@ -33,10 +33,12 @@ footer {
     font-size: 15px;
     font-weight: 700;
     color: $green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 15px;
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 15px;
+    }
   }
 }

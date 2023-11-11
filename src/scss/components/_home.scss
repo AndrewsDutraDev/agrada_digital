@@ -1,3 +1,5 @@
+@import '../components/product_block';
+
 .banner-grid {
   display: flex;
   flex-wrap: wrap;
@@ -12,5 +14,58 @@
     @include media("xs") {
       width: 100%;
     }
+  }
+}
+
+.products{
+  &-title{
+    font-size: 30px;
+    color: $black;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    @include media('xs'){
+      margin-top: 40px;
+    }
+  }
+  .slider{
+    position: relative;
+    .slick-prev{
+      left: -25px;
+      @include media("xs") {
+        left: -5px;
+      }
+      &:after{
+        content: url('../../../static/img/prev-icon.svg');
+        background-size: 40px 40px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+    .slick-next{
+      right: -25px;
+      @include media("xs") {
+        right: -5px;
+      }
+      &:after{
+        content: url('../../../static/img/next-icon.svg');
+        background-size: 40px 40px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+    .slick-next, .slick-prev{
+      display: block;
+      background-color: $black;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0;
+      z-index: 9999;
+      border-radius: 5px;
+      padding: 5px 9px;
+    }
+    .slick-list {margin: 0 -10px;}
+    .slick-slide>div {padding: 0 10px 25px;}
   }
 }

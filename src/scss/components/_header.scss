@@ -8,15 +8,18 @@ header {
     padding: 7px 15px;
   }
   nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
     position: sticky;
     top: 0;
     z-index: 9999;
+    background-color: $white;
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
     .logo{
       @include media('md'){
         width: 25%;
