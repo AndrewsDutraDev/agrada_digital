@@ -739,8 +739,7 @@ footer .payment .container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 80px;
 }
 .banner-grid > div {
   width: calc(50% - 5px);
@@ -754,6 +753,9 @@ footer .payment .container {
   }
 }
 
+.products {
+  margin-bottom: 80px;
+}
 .products-title {
   font-size: 30px;
   color: #000000;
