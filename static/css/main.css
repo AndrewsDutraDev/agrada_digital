@@ -769,7 +769,7 @@ footer .payment .container {
   font-weight: 900;
   text-decoration: underline;
 }
-.product-block button {
+.product-block a {
   margin-top: 15px;
   border-radius: 5px;
   background-color: #34CB2E;
@@ -778,7 +778,7 @@ footer .payment .container {
   font-size: 13px;
   transition: 0.2s;
 }
-.product-block button:hover {
+.product-block a:hover {
   background-color: #000000;
   color: #34CB2E;
 }
@@ -864,4 +864,54 @@ footer .payment .container {
 .products .slider .slick-slide {
   padding: 0 10px 25px;
   margin: 0 10px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px 0;
+}
+.product-image, .product-infos {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .product-image, .product-infos {
+    width: 100%;
+  }
+}
+.product-infos {
+  padding: 20px;
+}
+.product-infos .description {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.product-infos ins,
+.product-infos del {
+  display: block;
+}
+.product-infos del {
+  opacity: 0.3;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0 5px;
+}
+.product-infos ins {
+  font-size: 20px;
+  font-weight: 700;
+  color: #34CB2E;
+}
+.product-infos button {
+  background-color: #34CB2E;
+  color: #000000;
+  font-weight: 700;
+  padding: 11px 16px;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 20px 0;
+}
+.product-infos button:hover {
+  background-color: #000000;
+  color: #34CB2E;
 }

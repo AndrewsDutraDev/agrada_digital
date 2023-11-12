@@ -1,0 +1,48 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px 0;
+  &-image,
+  &-infos {
+    width: 50%;
+    @include media("xs") {
+      width: 100%;
+    }
+  }
+  &-infos {
+    padding: 20px;
+		.description{
+			font-size: 12px;
+			margin-top: 20px;
+		}
+    ins,
+    del {
+      display: block;
+    }
+    del {
+      opacity: 0.3;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 20px 0 5px;
+    }
+    ins {
+      font-size: 20px;
+      font-weight: 700;
+      color: $green;
+    }
+    button {
+      background-color: $green;
+      color: $black;
+      font-weight: 700;
+      padding: 11px 16px;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s;
+			margin: 20px 0;
+      &:hover {
+        background-color: $black;
+        color: $green;
+      }
+    }
+  }
+}
