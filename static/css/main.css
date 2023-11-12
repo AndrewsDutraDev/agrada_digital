@@ -709,6 +709,7 @@ footer .payment .container {
   font-size: 13px;
   color: #000000;
   margin-bottom: 15px;
+  min-height: 32px;
 }
 .product-block del, .product-block .installments {
   font-size: 12px;
@@ -810,6 +811,7 @@ footer .payment .container {
 .products .slider .slick-list {
   margin: 0 -10px;
 }
-.products .slider .slick-slide > div {
+.products .slider .slick-slide {
   padding: 0 10px 25px;
+  margin: 0 10px;
 }
