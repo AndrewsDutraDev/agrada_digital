@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -371,7 +371,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", monospace !important;
+  font-family: "Poppins", monospace !important;
   background-color: #F1F1F1;
 }
 body main {
@@ -385,7 +385,7 @@ a {
 a,
 button,
 input {
-  font-family: "Montserrat", monospace;
+  font-family: "Poppins", monospace;
   border-radius: 0;
   -webkit-appearance: none;
   appearance: none;
@@ -581,11 +581,59 @@ header nav .actions .shortcuts-item {
   column-gap: 10px;
   font-size: 12px;
   color: #000000;
+  position: relative;
 }
 @media (max-width: 767px) {
   header nav .actions .shortcuts-item {
     margin-bottom: 20px;
   }
+}
+header nav .actions .shortcuts-item .subinfos {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 190px;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+header nav .actions .shortcuts-item .subinfos.login p {
+  text-align: center;
+  margin-top: 15px;
+}
+header nav .actions .shortcuts-item .subinfos.login a {
+  text-align: center;
+}
+header nav .actions .shortcuts-item .subinfos p {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+header nav .actions .shortcuts-item .subinfos a {
+  background-color: #34CB2E;
+  color: #000000;
+  font-weight: 700;
+  padding: 11px 16px;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+header nav .actions .shortcuts-item .subinfos a.register {
+  background-color: #000000;
+  color: #fff;
+}
+header nav .actions .shortcuts-item .subinfos a:hover {
+  background-color: #000000;
+  color: #34CB2E;
+}
+header nav .actions .shortcuts-item:hover .subinfos {
+  opacity: 1;
+  visibility: visible;
 }
 header nav .actions .shortcuts-item > div {
   position: relative;

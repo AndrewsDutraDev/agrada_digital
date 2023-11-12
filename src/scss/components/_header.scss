@@ -92,8 +92,60 @@ header {
           column-gap: 10px;
           font-size: 12px;
           color: $black;
+          position: relative;
           @include media('xs'){
             margin-bottom: 20px;
+          }
+          .subinfos{
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid #DDDDDD;
+            border-radius: 5px;
+            background-color: $white;
+            width: 190px;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .2s;
+            &.login{
+              p{
+                text-align: center;
+                margin-top: 15px;
+              }
+              a{
+                text-align: center;
+              }
+            }
+            p{
+              font-weight: 500;
+              font-size: 12px;
+              margin-bottom: 15px;
+            }
+            a{
+              background-color: $green;
+              color: $black;
+              font-weight: 700;
+              padding: 11px 16px;
+              display: block;
+              border-radius: 5px;
+              transition: .3s;
+              &.register{
+                background-color: $black;
+                color: $white;
+              }
+              &:hover{
+                background-color: $black;
+                color: $green;
+              }
+            }
+          }
+          &:hover{
+            .subinfos{
+              opacity: 1;
+              visibility: visible;
+            }
           }
           > div{
             position: relative;
