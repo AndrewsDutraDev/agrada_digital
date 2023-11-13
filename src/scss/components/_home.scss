@@ -36,7 +36,7 @@
         left: -5px;
       }
       &:after{
-        content: url('../../../static/img/prev-icon.svg');
+        content: url('./../../../static/img/prev-icon.svg');
         background-size: 40px 40px;
         height: 40px;
         width: 40px;
@@ -48,7 +48,8 @@
         right: -5px;
       }
       &:after{
-        content: url('../../../static/img/next-icon.svg');
+        // content: url('../../../static/img/next-icon.svg');
+        content: url('./../../../static/img/next-icon.svg');
         background-size: 40px 40px;
         height: 40px;
         width: 40px;
