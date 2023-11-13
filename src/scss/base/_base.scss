@@ -48,36 +48,9 @@ img {
   max-width: 100%;
 }
 
-section.section {
-  padding-top: 4rem;
-  padding-bottom: 4.5rem;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @include media("xs") {
-    flex-direction: column;
-  }
-}
-
 .container {
   @extend %container;
 }
-
-.block {
-  display: flex;
-  flex-direction: column;
-
-  @include media("sm") {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-/* Lazy Load */
 
 .aspect-ratio {
   position: relative;
@@ -110,21 +83,4 @@ section.section {
     height: 100%;
     object-fit: cover;
   }
-}
-
-.lazy {
-  opacity: 0;
-  transition: all 200ms ease;
-
-  &.loaded {
-    opacity: 1;
-
-    & + .skeleton {
-      opacity: 0;
-    }
-  }
-}
-
-.skeleton {
-  @extend %skeleton;
 }
